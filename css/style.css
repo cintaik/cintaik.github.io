@@ -1,0 +1,376 @@
+.narrow h1{
+	font-size: 2.4rem;
+}
+h3.heading{
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 1.9rem;
+}
+/* Under line of section title */
+.heading-underline{
+	width: 3rem;
+	height: .2rem;
+	background-color: #1EBBAE;
+	margin:0 auto 2rem; /*format: top left&right bottom*/
+}
+/* End under line of section title */
+
+/*---------- COURSE SECTION ------------*/
+
+#course .narrow{
+	width: 90%;/*75%*/
+	margin: 1.5rem auto -70px;/*1.5rem auto 0*/
+	padding-top: .2rem;
+}
+
+.btn-secondary{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.2rem;/*.6rem 1.2rem*/
+	font-size: 1.2rem;/*1.2rem*/
+	text-transform: uppercase;
+	margin: 1rem;
+	border-color: #1EBBAE;
+	background-color: #1EBBAE;
+	color: white;
+}
+.btn-secondary:hover, 
+.btn-secondary:focus{
+	border-color: #189582;
+	background-color: #189582;
+	color: white;
+}
+
+.course-class h3{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding: .4;/*.4rem*/
+	text-align: left;
+	font-weight: 650;
+}
+
+.course-class p{
+	font-size: 1.1rem;
+	text-align: left;
+	text-align: justify;
+	text-justify:auto;
+}
+
+/*---------------------- iframe Section-----------------------------*/
+iframe[seamless] {
+	border: none;
+	overflow: hidden;
+	width: 100%;
+	height: 350px;/*350px*/
+	margin-bottom: 0px;/*new added*/
+	z-index: -1;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+body{
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+/* Managing how big layout will be shown after menu is clicked*/
+.offset:before{
+	display: block;
+	content: "";
+	height: 4rem;/*4rem : managing height of sections*/
+	margin-top: -4rem;/*-3.5rem : managing the margin between all sections background*/
+	/* "height" and "margin-top" should be in 180 degree defrences in order to suit the view of every section*/
+}
+/**/
+
+/*----------- NAVIGATION ------------*/
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9rem; /*1rem = 60px*/
+	letter-spacing: .1rem;
+	background:rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-brand img{
+	/*height: 2rem;*/
+	margin-top: -10px;
+	margin-bottom: -10px;
+	width: 48px;/*20%*/
+	height: 48p;/*20%*/
+	/*added on 18-08-2019*/
+	border-radius: 24px; /* making the border circle instead of square*/
+	background-color: white; /*making our logo background white instade of none*/
+	/*end added*/
+}
+
+.navbar-nav li{
+	padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	padding-top:  .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #1EBBAE;
+	transition: .3s ease;/*making hover transition*/
+}
+
+/*------------------ Landing Page -----------------------*/
+.home-inner{
+	background-image: url(../images/2018-Jeep-Wrangler-Unlimited-Sahara.jpg);
+}
+.caption{
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+}
+.caption h1{
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+.caption h3{
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 1.6rem;
+}
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+
+/*--------------------- Feature Section ---------------------------*/
+.jumbotron{	
+	margin-bottom: -2px;
+	padding: 2rem 0 2.5rem; /*format : top left&right bottom*/ 
+	border-radius: 0;
+}
+.feature svg.svg-inline--fa{ /* svg.inline--fa is found from google chrome inspector*/
+	color : #1EBBAE;
+}
+.feature h3{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: .4rem;
+}
+.feature p{
+	font-size: 1.1rem;
+	text-align: justify;
+	text-justify:auto;
+	word-wrap: break-word;
+   	/*width: 400px;/*400px*/
+   	margin-left: 2%;
+}
+
+/*--------------------- Resources Section---------------------------*/
+.fixed{
+	background-image: url(../images/2018-Jeep-Wrangler-front-02.jpg);
+	z-index: -1;/*makes background running in backside, while "1" makes it will be shown in front side*/	
+}
+.dark{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 7rem 2rem;/*format: top&bottom left&right.*/
+}
+.fixed-background h3{
+	margin-bottom: 2rem;/*2rem*/
+}
+.fixed-background p{
+	margin-top: 1.5rem;
+}
+.resource svg.svg-inline--fa{ /* svg.inline--fa is found from google chrome inspector*/
+	color : #1EBBAE;
+}
+.resource h3{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: .4rem;
+}
+.resource p{
+	font-size: 1.1rem;
+	text-align: justify;
+	text-justify:auto;
+	word-wrap: break-word;
+   	width: 400px;
+}
+.resource img{
+	width: 60%;
+	height: 55%;
+	opacity: 0.3;
+  	filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+.resource img:hover{
+	opacity: 1;
+  	filter: alpha(opacity=100); /* For IE8 and earlier */
+
+}
+
+/*white border*/
+.boxshadow{
+  	position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  	padding: 10px;
+  	background: white;
+}
+.boxshadow:hover{
+  	position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  	padding: 10px;
+  	background: #1EBBAE;
+}
+/*end white border*/
+
+/* Make the image fit the box */
+.boxshadow img {
+  	width: 100%;
+  	border: 1px solid #8a4419;
+  	border-style: inset;
+}
+/* end make the image fit the box*/
+
+.boxshadow::after {
+  content: '';
+  position: absolute;
+  z-index: -1; /* hide shadow behind image */
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);        
+  width: 70%; 
+  left: 15%; /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0;
+}
+
+#resources h3{
+	text-transform: uppercase;
+}
+#resources .btn-secondary{
+	border-width: medium;
+	border-radius: 0;
+	padding: .2rem .5rem;/*.6rem 1.2rem*/
+	font-size: 1rem;/*1.2rem*/
+	text-transform: unset;
+	margin: 1rem;
+	border-color: #1EBBAE;
+	background-color: #1EBBAE;
+	color: white;
+}
+
+/*---------------------- Client Section -----------------------------*/
+.clients img{
+	width: 100%;
+	border-radius: 50%; /*makes the images circular*/
+}
+blockquote .svg-inline--fa{
+	color: #1EBBAE;
+	margin: 1rem; /*makes the quote mark slightly higher*/
+}
+.clients-hr{
+	border-top: .05rem solid #1EBBAE; 
+}
+
+/*-------------------  Order Section  -------------------------------*/
+.lead{
+	text-transform: uppercase;
+}
+/*-------------------  End Order Section  ---------------------------*/
+
+/*----------------------- Contact Section ---------------------------*/
+footer{
+	background-color: #40474E;
+	color: white;
+	padding: 2rem 0 2rem;/*2rem 0 2rem : padding of copyright*/
+	margin-top: 0.5rem;/*1rem : Space between footer and Order Section*/
+}
+footer img{
+	height: 5rem;
+	margin: 1.5rem 0;/*1.5rem 0*/
+	/*added on 18-08-2019*/
+	border-radius: 54px; /* making the border circle instead of square*/
+	background-color: white; /*making our logo background white instade of none*/
+	/*end added*/
+}
+footer a{
+	color:white;
+}
+footer .svg-inline--fa{
+	font-size: 1.6rem; /*making the icon of social media are bigger*/
+	margin: 1.2rem .5rem 0 0;
+}
+footer .svg-inline--fa:hover{
+	color: #1EBBAE!important;
+}
+hr.socket{
+	width: 100%;/*makes the content is at center*/
+	border-top: .2rem solid #666B71;
+	margin-top: 3rem;
+}
+
+/*---------------------- Media Queries --------------------------*/
+/*-- Additional CSS For Mobile Interface --*/
+@media(max-width: 767px){
+	.caption h1{
+		font-size: 2.3rem;
+		letter-spacing: .15rem;
+		padding-bottom: .5rem;
+	}
+	.caption h3{
+		font-size: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+	.btn-lg{
+		padding: .5rem 1rem;
+		font-size: 1rem;
+	}
+	.narrow h1{
+		font-size: 1.5rem;
+	}
+	
+	/* Setting Padding space between iframe to text*/
+	.col-md-6 .course-class h3{
+		padding-top: .1rem;
+	}
+	/* End Setting Padding space*/
+
+	.col-md-6 .feature p{
+		margin-left: 0;	
+	}
+
+	/*------------------*/
+	.col-5 .resource{
+		position: relative;
+	}
+	.col-5 .resource iframe{
+		position: absolute;
+		width: 100%;
+		height:500vh;
+	}
+	/*-------------------*/
+
+	iframe[seamless]{
+		height: 190px;
+	}
+
+	.clients img{
+		max-width: 50%;
+		/*To center the image clients*/
+		display: block;
+		margin: 0 auto;
+		/*End to center the image clients*/
+	}
+}
